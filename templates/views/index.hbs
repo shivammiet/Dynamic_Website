@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Your HTML content here -->
+
+    {{>navbar }}
+    {{! -- hero section start --}}
+    <div class="container-fluids mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        <h1>We will help you to</h1>
+                        <h1>Grow your business</h1>
+                        <p>We are the team of <span class="bold-style">Professional developers</span></p>
+                        <button class="btn-style btn-primary">Read more</button>
+                    </div>
+                    {{!-- right side --}}
+                    <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src="growth.svg" alt="herosection_image">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{! -- hero section end --}}
+      
+
+   
+    {{! -- about us start --}}
+  
+     {{>about}}
+    {{! -- about us end --}}
+   
+
+    {{! -- our service start --}}
+  
+     {{>service}}
+
+    {{! -- our service  end --}}
+   
+  {{! --  maps start --}}
+  
+     {{>maps}}
+
+    {{! --  maps  end --}}
+   
+ 
+  {{! --  contact start --}}
+  
+     {{>contact}}
+
+    {{! --  contact end --}}
+   
+
+
+
+
+    
+    <script src="/jq/jquery.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
